@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAK DESA</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'> -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="gallery.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div id="loader" class="center"></div>
+    <!-- 1 Welcome Page -->
+    <!-- <div id="panel1">
+        <div class="tombol_pembuka">
+            <button onclick="myFunction()">START</button>
+        </div>
+    </div> -->
+    <!-- 1 End -->
+    <div class="menu_flow">
+      
+      <button onclick="openFullscreen();">⛶</button>
+      <button onclick="closeFullscreen();">◻</button>
+      <div class="action-btns" >
+          <button style="background-color: white;" class="btn play">🔊</button>
+          <button style="background-color: white;" class="btn pause">🔈</button>
+      </div>
+    
+  </div>
+  <div class="scroll_down">
+    <img width="70" src="image/scroll_down.gif" alt="">
+  </div>
+
+    <div class="panel2">
+        <br><br>
+        <h1 style="text-align:center; margin-top: 10%; font-size: 54pt; color: white;"><b>MENGGALI KEINDAHAN WISATA <br>SUMATERA UTARA</b></h1>
+        
+    </div>
+    <div class="panel201">
+      <br><br>
+      <center><h1 class="t1" style="margin: auto; text-align:center; font-size: 32pt; color: white;">
+        Eva, seorang turis muda asal Malaysia. <br> Eva turun dari pesawat dengan senyuman gembira di wajahnya.</h2></center>
+        <br><br>
+  </div>
+    <div class="panel21">
+        <br><br>
+        
+        <div class="arrive_kualanamu2" style="height: 100vh; position: absolute;">
+          <img width="2000" src="image/arrive_kualanamu2.png" alt="">
+        </div>
+        <div class="arrive_kualanamu3" style="width: 100vw; position: absolute; margin-top: 40vh;">
+          <img width="1000" src="image/plane_large.png" alt="">
+        </div>
+        <div class="arrive_kualanamu" style="width: 100vw; position: absolute; margin-left: -25vh; margin-top: -6vw;">
+          <img src="image/arrive_kualanamu.png" alt="">
+        </div>
+        <div id="notepad_statistik" style="position: absolute; margin-top: 1vh; margin-left: 50vw;">
+          <p><b>Jumlah Wisatawan Mancanegara</b></p>
+          <img data-toggle="modal" data-target="#modalWisman" style="cursor: pointer; position: absolute;" width="170" src="image/note.png" alt="">
+        </div>
+        
+        <div class="ct t2">
+          <div class="container">
+          <h4><b>EVA</b></h4> 
+          <p>Aku tidak percaya akhirnya berada di Bandara Internasional Kualanamu, Sumatera Utara.</p> 
+          </div>
+        </div>
+        <div class="ct t3">
+          <div class="container">
+          <h4><b>EVA</b></h4> 
+          <p>Aku akan turun dari pesawat dan akan mengambil barang bagasiku!</p> 
+          </div>
+      </div>
+        <!-- <div style="float: left; opacity: 100; margin-left: -8%; margin-top: -2%;">
+          <img width="2000" src="image/arrive_kualanamu.png" alt="">
+        </div> -->
+    </div>
+    <div class="panel2x" style="height: 100vh;">
+      <h1>tes</h1>
+    </div>
+    <div class="panel2xx" style="height: 100vh;">
+      <h1>tes</h1>
+    </div>
+    <!-- <div class="panel2xxx" style="height: 100vh;">
+      <h1>tes</h1>
+    </div> -->
+    
+    <!-- HORIZONTAL SCROLL -->
+    <div class="panel3">
+        <div class="hscroll">
+
+          <div class="car1" style="opacity: 0; margin-top: 35vh; margin-left: -200px;">
+            <img width="800" src="image/eva1.png" alt="">
+          </div>
+          <div class="bg1" style="height:100vh; position: fixed; z-index:-1; margin-bottom: 0;
+          ">
+            <img id="sc1" src="image/ruang_bandara.png" alt="">
+          </div>
+          <div class="bg1" style="opacity: 100; position: absolute; margin-top: 10vh; margin-left: 350px;">
+            <img data-toggle="modal" data-target="#modalSatu" style="cursor: pointer;margin-top: 20%; position: absolute;" width="170" src="image/wisata1.png" alt="">
+            <center><h3 style="font-size: 14pt; width: 150px;">Klik Gambar Ini</h3></center>
+          </div>
+          <div class="bg1" style="opacity: 100; position: absolute; margin-top: 10vh; margin-left: 1090px;">
+            <img data-toggle="modal" data-target="#modalDua" style="cursor: pointer;margin-top: 20%; position: absolute;" width="170" src="image/wisata2.png" alt="">
+            <center><h3 style="font-size: 14pt; width: 150px;">Klik Gambar Ini</h3></center>
+          </div>
+          <div class="bg1" style="opacity: 100; position: absolute; margin-top: 10vh; margin-left: 1750px;">
+            <img data-toggle="modal" data-target="#modalTiga" style="cursor: pointer;margin-top: 20%; position: absolute;" width="170" src="image/wisata3.png" alt="">
+            <center><h3 style="font-size: 14pt; width: 150px;">Klik Gambar Ini</h3></center>
+          </div>
+          <div class="bg1" style="opacity: 100; position: absolute; margin-top: 10vh; margin-left: 2410px;">
+            <img data-toggle="modal" data-target="#modalEmpat" style="cursor: pointer;margin-top: 20%; position: absolute;" width="170" src="image/wisata4.png" alt="">
+            <center><h3 style="font-size: 14pt; width: 150px;">Klik Gambar Ini</h3></center>
+          </div>
+          <div class="bg1" style="opacity: 100; position: absolute; margin-top: 10vh; margin-left: 3070px;">
+            <img data-toggle="modal" data-target="#modalLima" style="cursor: pointer;margin-top: 20%; position: absolute;" width="170" src="image/wisata5.png" alt="">
+            <center><h3 style="font-size: 14pt; width: 150px;">Klik Gambar Ini</h3></center>
+          </div>
+          <div class="bg1" style="opacity: 100; position: absolute; margin-top: 10vh; margin-left: 3730px;">
+            <img data-toggle="modal" data-target="#modalEnam" style="cursor: pointer;margin-top: 20%; position: absolute;" width="170" src="image/wisata6.png" alt="">
+            <center><h3 style="font-size: 14pt; width: 150px;">Klik Gambar Ini</h3></center>
+          </div>
+          <div class="bg1" style="opacity: 100; position: absolute; margin-top: 10vh; margin-left: 4330px;">
+            <img data-toggle="modal" data-target="#modalTujuh" style="cursor: pointer;margin-top: 20%; position: absolute;" width="170" src="image/wisata7.png" alt="">
+            <center><h3 style="font-size: 14pt; width: 150px;">Klik Gambar Ini</h3></center>
+          </div>
+          <div class="bg1" style="opacity: 100; position: absolute; margin-top: 10vh; margin-left: 4930px;">
+            <img data-toggle="modal" data-target="#modalDelapan" style="cursor: pointer;margin-top: 20%; position: absolute;" width="170" src="image/wisata8.png" alt="">
+            <center><h3 style="font-size: 14pt; width: 150px;">Klik Gambar Ini</h3></center>
+          </div>
+        </div>
+    </div>
+    <div class="panel31">
+      <div class="sembunyi" style="visibility: hidden;">a</div>
+      <div class="data_wisman2" style="position: absolute; margin-left: 35vw;">
+        <p style="color:white">Kedatangan Wisatawan Mancanegara Menurut Pintu Masuk</p>
+        <img width="800" src="image/data_wisman2.png" alt="">
+        <p style="color:white">Sumber: Badan Pusat Statistik</p>
+      </div>
+      
+    </div>
+    <div class="panel32">
+      <div class="sembunyi" style="visibility: hidden;">a</div>
+      <div id="notepad_statistik" style="position: absolute; margin-top: 10vh; margin-left: 3vw;">
+        <p><b>Tingkat Penghunian Kamar Hotel dan Akomodasi Lainnya</b></p>
+        <img data-toggle="modal" data-target="#modalWisman2" style="cursor: pointer; position: absolute;" width="170" src="image/note.png" alt="">
+      </div>
+
+      <div class="batas_bawah2" style="margin-top: -100px; position: absolute;">
+        <img src="image/batas_hitam_bottom.png" alt="">
+      </div>
+
+    </div>
+    <!-- <div class="panel33">
+      <div class="batas_atas1">
+        <img src="image/batas_hijau1.png" alt="">
+      </div>
+    </div> -->
+    <div class="panel4">
+        <div class="sembunyi" style="visibility: hidden;">a</div>
+        
+        <div class="card card1">
+            <div class="container">
+            <h4><b>EVA</b></h4> 
+            <p>Aku harus menjelajahi semua keindahan ini, alam ini terlalu indah buatku</p> 
+            </div>
+        </div>
+        <div class="card card2" style="margin-top: -5%;">
+            <div class="container">
+            <h4><b>EVA</b></h4> 
+            <p>Aku akan ke Samosir menggunakan mobil yang sudah saya pesan.</p> 
+            </div>
+        </div>
+        <div class="evaMulai" style="opacity: 100; margin-top: 10vh;">
+          <img width="400" src="image/eva1.png" alt="">
+        </div>
+    </div>
+    <div class="panel5"><br><center>
+      <div class="tombol_next" style="background-color: white;
+      border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    margin-top: 0;
+    width: 30%;">
+        <div class="container">
+        <a href="perjalanan.html"><h4><b>LANJUTKAN CERITA</b></h4></a> </div>
+    </div>
+  </center>
+  <br>
+  <!-- SELURUH MODAL DI SINI -->
+  <!-- Modal -->
+  <div class="modal fade" id="modalSatu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">SAMOSIR</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDua" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">DESA TUKTUK</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalTiga" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">AEK SIJORNIH</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="padding: 30px;">
+          <center><img width="300" src="image/aek_sijornih.jpg" alt=""></center><br>
+          <p>KABUPATEN TAPANULI SELATAN, Sumatera Utara. <br><br>
+            Aek Sijorni adalah tempat wisata alam yang berada di Desa Aek Libung, Kecamatan Sayurmatingi, Kabupaten Tapanuli Selatan Tempat ini menawarkan panorama berupa air terjun bertingkat dengan kungkungan rapat pohon kelapa di sekitarnya berjarak lebih kurang 30 km dari kota Padang Sidempuan ke arah Mandailing Natal. 
+            Tempat wisata Aek Sijorni berupa air terjun bertingkat dengan air yang selalu jernih karena aliran sungai yang melewati batu codas dan tidak mengandung lumpur dan dikelilingi banyak pohon kelapa. Memasuki kewasan ini harus melalui jembatan gantung yang melintasi Sungai Sayur Matinggi dengan bayaran masuk sebesar Rp. 2000,-. Tapi yang paling unik untuk mencapai ke lokasi pemandian Aek Sijorni harus melalui beberapa kebun masyarakat. setiap lewat dari kebun tersebut harus bayar Rp. 2000,-. ada sekitar 4 kali melewati kebun masyarakat artinya harus membayar 4 kali Rp. 2000,
+            Tempat ini sangat ramai pada hari libur. terutama saat hari lebaran. Dikatakan. nama tempat ini berasal dari bahasa Batak yakni aek yang berarti air. sementara Sijorni adalah bersih. Sesuai dengan namanya, aliran air di sini katanya selalu bening. meski tengah pada soot debit air tinggi. 
+            </p>
+            <p>sumber: disbudpar.sumutprov.go.id, sportourism.id</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEmpat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">PEMANDIAN AIR SODA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <center><img width="300" src="image/air_soda.jpg" alt=""></center><br>
+          <p>KABUPATEN TAPANULI UTARA, Sumatera Utara <br><br>
+            Tempat wisata di Sumatera Utara yang satu ini memang sangat unik bahkan di Indonesia cuman ada di Desa Parbubu, Tapanuli Utara. Itulah Pemandian Air Soda dan airnya benar-benar air soda seperti yang kebanyakan orang minum. Dan di dunia hanya ada 2 saja mata air soda, di Indoensia dan di Venezuela. Bahkan sangat sering wisatawan yang datang tidak hanya berenang di kolam saja, tapi juga meminum air soda dari sumbernya.
+          </p>
+            <p>sumber: direktoripariwisata.id/unit/7502</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalLima" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">KEBUN TEH SIDAMANIK</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <center><img width="300" src="image/sidamanik.jpg" alt=""></center><br>
+          <p>KABUPATEN SIMALUNGUN, Sumatera Utara<br><br>
+            Kawasan sekitar Danau Toba makin kaya pilihan alternatif destinasi wisata. Kali ini pelancong bisa memilih agrowisata di Kabupaten Simalungun, tepatnya perkebunan teh Sidamanik, berjarak 26 kilometer dari pusat kota Pemantang Siantar. Salah satu daya tarik mengunjungi perkebunan teh Sidamanik yang cocok sebagai wisata keluarga ini adalah dataran tinggi dengan udara sejuk yang biasa kita temui di perkebunan teh. 
+          <br><br>
+          Perkebunan teh Sidamanik merupakan kebun teh yang dikelola PTPN IV yang bernama asli Bah Butong. Berada di Kecamatan Sidamanik  dan ketinggian 890 m di atas permukaan laut, pengunjung dapat menikmati hamparan hijau perkebunan teh dan berswa foto disela-sela  pohon teh. Bahkan sebelum sampai ke kebun teh, kita disuguhi pemandangan alam lain nan indah. Dari Desa di sekitar kebuh teh kita ditemani areal persawahan dan perkebunan jagung.  Di selatan,  juga terdapat pemandangan dari Pegunungan Dolok Simanuk-manuk, sedangkan sebelah utara Gunung Dolok Simbolon. Dan arah barat jelas terlihat hamparan Pegunungan Simarjarunjung. Menarik bukan agrowisata Kabupaten Simalungun.
+          </p>
+            <p>sumber: direktoripariwisata.id/unit/93</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEnam" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">PANORAMA ALAM BAKTIRAJA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <center><img width="300" src="image/baktiraja.jpg" alt=""></center><br>
+          <p>KABUPATEN HUMBANG HASUNDUTAN, Sumatera Utara<br><br>
+            Destinasi wisata Baktiraja ini merupakan obyek wisata berupa panorama alam yang dapat disaksikan pada perjalanan menuju Kecamatan Baktiraja di Kabupaten Humbang Hasundutan, berupa objek wisata alam dengan pemandangan lembah Bakkara, pemandangan lembah Bakkara. Baktiraja adalah singkatan dari Bakkara Tipang Haroroan ni Raja adalah berupa bentangan lembah datarseluas ratusan hektare. 
+            <br><br>
+            Dari tepi teluk Bakkara ini terdapat rumah-rumah adat tua. balai-balai masing-masing kerajaan di Lumban Raja dan Onan Bale. Rumah-rumah kerajaan terdiri dari Rumah Bolon, Rumah Parsaktian, Sopo Bolon. Tari Sopo dan Sopo Godang. 
+            <br><br>
+            Lembah yang berjarak sekitar 8 kilometer dari Dolok Sanggul ibukota Humang Hasundutan itu terdiri dari beberapa desa dan dusun. Lembah ini dibelah oleh dua aliran sungai besar yang berair deras. Sungai yang terbesar adalah Aek Silang yang bersumber dari air terjun yang tercurah dari bentangan perbukitan. Sungai kedua yang lebih kecil bernama Aek Simangira. Keduanya mengaliri beberapa desa dan bermuara di Danau Toba. 
+            <br><br>
+            lklim di lembah Bakkara berhawa sejuk sepanjang hari. Banyak mata air bersumber dari kawasan ini. Mata air utama yang terbesar adalah Aek Sitio-tio. Lokasinya persis di tepian sungai.Tempat pemandian alam yang dulunya berupa telaga kecil itu bersumber dari mata air "abadi" yang dinaungi sebuah pohon besar sejenis hariara (sejenis beringin) yang airnya selalu jernih.Lokasi itu kini menjadi sumber air utama bagi warga sekitar untuk kebutuhan minum dan mandi.Selain itu, di Bakkara juga banyak ditemui air terjun. 
+            </p>
+            <p>sumber: disbudpar.sumutprov.go.id, sportourism.id</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalTujuh" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">PULAU SEMBILAN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <center><img width="300" src="image/sembilan.jpg" alt=""></center><br>
+          <p>KABUPATEN LANGKAT, Sumatera Utara<br><br>
+            Pulau Sembilan yang terletak di Kecamatan Pangkalan Susu berdekatan dengan Pulau Kampai. Pulau Sembilan merupakan pulau kecil di perairan selat Malaka yang dekat dengan daratan Pulau Sumatera. Pulau ini memiliki pantai berpasir putih dan menjadi tempat favorit pengunjung yang ingin menyaksikan dan menikmati suasana sunrise dan sunset sekaligus di satu pulau.
+          </p>
+            <p>sumber: disbudpar.sumutprov.go.id, dailyvoyagers.com/</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDelapan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">KEPULAUAN HINAKO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <center><img width="300" src="image/hinako.jpg" alt=""></center><br>
+          <p>KABUPATEN NIAS BARAT, Sumatera Utara<br><br>
+            Kepulauan Hinako adalah salah satu diantara pulau terluar di Indonesia yang mempunyai keindahan alam yang begitu mempesona serta mengagumkan. Pulau nan indah serta masih alami ini terdapat di Kecamatan Sirombu, Kabupaten Nias Barat, Sumatera Utara atau terdapat di pesisir barat Pulau Nias yang berhadapan dengan Samudra Hindia. 
+            <br><br>
+            Selain Pulau Hinako. di kawasan ini masih terdapat 8 Pulau kecil lainnya yang juga memiliki keindahanyang berbeda satu dengan yang lain,yaitu Pulau Bogi. Pulau Bawa. Pulau Asu. Pulau lmana, Pulau Heruanga, Pulau Hamutala serta Pulau Langu yang semuanya pantainya berpasir putih bersih, lembut serta indah. 
+            <br><br>
+            Di Kepulauan Hinako berbagai aktifitas wisata bisa dilakukan seperti berenang, berjemur matahari. bersantai.memancing, diving dan surfing terlebih di Pulau Asu serta Pulau Bawa yang mempunyai ombak mencapai 6 meter. Banyak wisatawan pengagum surfing datang ke kepulauan ini untuk menikmati tantangan ombak Samudra Hindia yang besar tinggi serta panjang bergelombang. 
+            <br><br>
+            Selain memiliki ombak yang besar. perairan Kepulauan Hinako juga menyimpan keindahan dunia bawah laut yang juga menarik, seperti terumbu karang yang masih terjaga kelestariannya dengan berbagai jenis biota lout lainnya.Pulau Asu serta Pulau Bogi, terdapat spot snorkeling dan divingdengan pemandangan terumbu karang yang sangat indah.Pengunjung dapat juga beraktivitas fishing atau memancing. 
+            </p>
+            <p>sumber: disbudpar.sumutprov.go.id, sportourism.id</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalWisman" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">DATA WISATAWAN MANCANEGARA YANG DATANG KE SUMATERA UTARA TAHUN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <center><img width="800" src="image/data_wisman.png" alt=""></center><br>
+          <p>TAHUN 2022, Jumlah Wisatawan Nusantara yang masuk ke Sumatera Utara berjumlah <mark>74.498 orang.</mark><br><br>
+            <p>Sumber: Badan Pusat Statistik</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalWisman2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">TINGKAT PENGHUNIAN KAMAR HOTEL DAN AKOMODASI LAINNYA, 2018-2022</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <center><img width="800" src="image/data_wisman3.png" alt=""></center><br>
+          <p>TAHUN 2022, TPK (Tingkat Penghunian Kamar) berbintang adalah <mark> 44,52 </mark> dan melati adalah <mark> 27,56 </mark>. Artinya 44-45 per 100 kamar hotel yang tersedia ditempati oleh wisatawan dan 27-28 per 100 kamar melati yang tersedia ditempati oleh wisatawan.<br><br>
+            <p>Sumber: Badan Pusat Statistik</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+    
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+<script src="app.js"></script>
+<script src="loader.js"></script>
+<!-- <script src="gallery.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<audio style="visibility: collapse;" controls loop src="audio/bg.mp3"></audio>
+</body>
+</html>

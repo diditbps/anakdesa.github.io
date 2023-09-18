@@ -1,0 +1,463 @@
+body {
+    margin: 0;
+}
+
+.panel2 {
+    font-family: Sen;
+}
+
+#panel1 {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    opacity: 100%;
+    position: fixed;
+}
+.panel2 {
+    height: 100vh;
+    background-color: white;
+    background: url("image/DanauToba.jpg") no-repeat center bottom / cover;
+
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.panel211 {
+  height: 25vh;
+  background-color: #191A19;
+}
+/* .panel212 {
+  height: 75vh;
+  background-color: #1E5128;
+} */
+
+.panel201 {
+  height: 22vh;
+    background-color: #1E5128;
+}
+
+.panel21 {
+  height: 100vh;
+    background-color: #95CDE5;
+    background-attachment: scroll;
+  background-position-y: -6vw;
+}
+.panel3 {
+    height: 100vh;
+    background-color: #78C9E0;
+    /* overscroll-behavior: none; */
+}
+.panel31 {
+  height: 70vh;
+  background-color: #191A19;
+}
+.panel32 {
+  height: 100vh;
+  background-color: #BCB9B4;
+  background: url("image/bagasi.png") no-repeat center bottom / cover;
+  background-attachment: scroll;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  /* background-position-x: 10vh; */
+}
+.panel33 {
+  height: 10vh;
+  background-color: #1E5128;
+}
+.panel4 {
+    height: 100vh;
+    background-color: #1E5128;
+    background: url("image/arrive_kualanamu3.png") no-repeat center bottom / cover;
+    /* background-attachment: scroll; */
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+.panel5 {
+    height: 30vh;
+    background-color: #191A19;
+}
+
+.tombol_pembuka {
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+.menu_flow {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.scroll_down{
+  position: fixed;
+  bottom: 0;
+  left: 47%;
+  z-index: 1;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+/* :fullscreen{
+    background-color: yellow;
+} */
+
+.panel {
+    height: 100vh;
+    width: 100vw;
+}
+
+.hscroll{
+  overscroll-behavior: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#sc1{
+  height: 100%;
+  width: auto;
+}
+
+#f1{
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+}
+#notepad_statistik {
+  animation: shake 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.arrive_kualanamu3{
+  animation: pesawat 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes pesawat {
+  0% { transform: translate(2000px, 0px); }
+  50% { transform: translate(0px, 0px); }
+  100% { transform: translate(-2000px, 0px); }
+}
+
+@keyframes text_klik {
+  0% { transform: translate(0px, 0px); opacity: 0;}
+  50% { transform: translate(0px, 3px); opacity: 1; }
+  100% { transform: translate(0px, 0px); opacity: 0; }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    opacity:0;
+    margin-top: 5%;
+    margin-left: 10vw;
+  }
+
+  .card0  {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    transition: 0.3s;
+    width: 40%;
+    opacity:100;
+    margin-top: 5%;
+    margin-left: 50px;
+  }
+
+  .ct  {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+    position: fixed;
+    transition: 0.3s;
+    width: 30%;
+    opacity:0;
+    margin-top: 5%;
+    margin-left: 20%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+/* h2{
+    text-transform: uppercase;
+} */
+
+/* HORIZONTAL SCROLL MODAL */
+
+/* AKHIR HORIZONTAL SCROLL MODAL */
+
+/* LOADER BEFORE READY */
+#loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.car {
+  /* position: absolute;  */
+  position: fixed;
+  /* top:0; left:0; margin:140px 0px 0px 130px; */
+}
+
+/* BATAS INDEX1 */
+
+.action-btns {
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+  }
+  
+  .btn {
+    /* width: 12rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem; */
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .play {
+    background-color: #89B016;
+  }
+  
+  .play:hover{
+    background-color: #6e8d12;
+  }
+  
+  .pause {
+    background-color: #E7CF20;
+  }
+  
+  .pause:hover{
+    background-color: #d0ba1d;
+  }
+
+/* KUIS */
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+.mySlides {display:none;}
+
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    opacity:100;
+    /* margin-top: 5%; */
+    background-color: white;
+    border-radius: 10px;
+}
+
+.kuispanel{
+    padding: 20px;
+    background-color: #E7CF20;
+    background: url("image/kuis_frame.png") no-repeat center bottom / cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: 100vh;
+}
+
+
+
+  /* AKHIR KUIS */
+
+  /* AWAL PERJALANAN */
+  .perjalanan_panel2 {
+    height: 30vh;
+    background-color: #1E5128;
+    
+  }
+.perjalanan_panel3 {
+    height: 100vh;
+    background-color: #191A19;
+    /* overscroll-behavior: none; */
+    background: url("image/lobi_hotel.png") no-repeat center bottom / cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* z-index: -1; */
+    /* background-size: cover; */
+    width: 100vw;
+}
+.perjalanan_panel4 {
+  height: 110vh;
+  background-color: #1E5128;
+  /* overscroll-behavior: none; */
+}
+.perjalanan_panel5 {
+  height: 100vh;
+  background-color: #191A19;
+  /* overscroll-behavior: none; */
+}
+.perjalanan_panel6 {
+  height: 40vh;
+  background-color: #191A19;
+  /* overscroll-behavior: none; */
+}
+.perjalanan_panel7 {
+  height: 120vh;
+  background-color: #191A19;
+  /* overscroll-behavior: none; */
+}
+.perjalanan_panel8 {
+  height: 120vh;
+  background-color: #1E5128;
+  /* overscroll-behavior: none; */
+}
+.perjalanan_panel9 {
+  height: 50vh;
+  background-color: #191A19;
+  /* overscroll-behavior: none; */
+}
+.perjalanan_panel10 {
+  height: 100vh;
+  background-color: lightblue;
+    background: url("image/pelabuhan.png") no-repeat center bottom / cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* z-index: -1; */
+    /* background-size: cover; */
+    /* height: 100vh; */
+}
+
+.perjalanan_panel11 {
+  height: 40vh;
+  background-color: #191A19;
+  
+}
+.perjalanan_panel12 {
+  height: 40vh;
+  background-color: #1E5128;
+  
+}
+
+.kotak_penjelasan {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    opacity:50;
+    background-color: white;
+    border-radius: 10px;
+}
+  /* AKHIR PERJALANAN */
+
+  /* BATAS */
+/* .batas_bawah2{
+  height: 10vh;
+  background-color: #4E9F3D;
+  margin-bottom: -75px; position: absolute;
+} */
+.batas_bawah1{
+  height: 10vh;
+  background-color: #1E5128;
+}
+
+.batas_bawah img {
+  width: 100vw;
+  margin-bottom: -100px;
+}
+.batas_atas1{
+  margin-top: -75px; position: absolute;
+  height: 10vh;
+}
+.batas_atas0{
+  margin-top: -75px; position: absolute;
+  height: 10vh;
+}
+
+.text_klik {
+  text-align: center;
+  margin: auto;
+  margin-left: 300px;
+  opacity: 0;
+  animation: text_klik 3s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  z-index: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mySlides1 {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
